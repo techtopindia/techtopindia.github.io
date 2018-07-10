@@ -16,9 +16,9 @@
 			}
 		</style>
 	</head>
-	<body class="bg-blue ">
-		<div class="bg-black p-20 text-center">
-		<div class="container-fluid bg-black fg-white pos-fixed fixed-top z-top">
+	<body class="bg-white ">
+		<div class="bg-black pb-20 text-center">
+		<div class="container-fluid bg-black fg-white pos-static  z-top">
         <header class="app-bar container bg-black fg-white pos-relative app-bar-expand-md" data-role="appbar"><button type="button" class="hamburger menu-down hidden"><span class="line"></span><span class="line"></span><span class="line"></span></button>
             <ul class="app-bar-menu bg-blue  ml-auto">
                 <li ><a href="./mentors.html">Meet the Mentors</a></li>
@@ -26,7 +26,7 @@
         </header>
     </div>
 
-			<div>
+			<div class="pt-10">
 				<a href="//techtop.in" class="d-none d-inline-block-md no-decor fg-white border bd-white border-radius p-4 h2 pt-6 pl-5 pr-5">
 				<img src="http://techtop.in/wp-content/themes/techtop/assets/images/logo.png"> Innovation Summit<sup>'18</sup></a>
 				<p class="fg-white mt-0">#documentationChannel</p>
@@ -35,39 +35,36 @@
 			<h4 class="fg-light text-upper text-light mt-5"><span class="reduce-1 enlarge-1-md">to Rais it to the Next Level </h4>
 			</div>
 			<div class="text-center p-15">
-				<div class="container">
+				<div class="container" align="center">
 					<!-- <p>Starts in..</p> -->
-					<p><strong><span id="timerx" class="h1"> Loading </span></strong></p>
+					<div style="width: 400px;"  align="left">
+						
+					<p ><strong><span id="timerx" class="h1"> Members </span></strong></p>
+					<ul class="mt-5 fg-blue">
+						<li> <a class="fg-blue" href="/2018/workshop/akhil-ks">Akhil KS</a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/bansal-gajjar">Bansal Gajjar</a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/jinto-jonsan">Jinto Jonsan</a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/mukund-kamariya">Mukund Kamariya</a></li>
+
+						<li> <a class="fg-blue" href="/2018/workshop/akshay-wagh">Akshay Wagh</a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/chetan-wankhede">Chetan Wankhede</a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/john-joe">John Joe</a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/rahul-gupta">Rahul Gupta</a></li>
+
+						<li> <a class="fg-blue" href="/2018/workshop/anand-joshi">Anand Joshi </a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/dinesh-kumar">Dinesh Kumar</a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/kishan-vaja">Kishan Vaja</a></li>
+						<li> <a class="fg-blue" href="/2018/workshop/rhuthwik-nair">Rhuthwik Nair</a></li>
+
+						<li> <a class="fg-blue" href="/2018/workshop/anuvind-a">Anuvind A </a></li>
+
+					</ul>
+					</div>
 				</div>
 			</div>
 			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 			<script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
 			<!-- Display the countdown timer in an element -->
-			<script>
-			// Set the date we're counting down to
-			var countDownDate = new Date("Jul 8, 2018 08:00:00").getTime();
-			// Update the count down every 1 second
-			var fn = function() {
-				// Get todays date and time
-				var now = new Date().getTime();
-				// Find the distance between now an the count down date
-				var distance = countDownDate - now;
-				// Time calculations for days, hours, minutes and seconds
-				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-				// Display the result in the element with id="timerx"
-				document.getElementById("timerx").innerHTML = days + "d " + hours + "h "
-				+ minutes + "m " + seconds + "s ";
-				// If the count down is finished, write some text
-				if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("timerx").innerHTML = "It is on";
-					}
-			}
-			fn();
-			var x = setInterval(fn, 1000);
-			</script>
+
 		</body>
 	</html>
